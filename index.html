@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dorothea Dix: Mental Health / Prison Reformer | Jayaratna Deshamouni</title>
+  <meta name="description" content="A polished U.S. History I Honors project website on Dorothea Dix as a 19th-century mental health and prison reformer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=DM+Sans:wght@400;500;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top">
+      <span class="seal">DD</span>
+      <span class="brand-text">Dorothea Dix: Mental Health / Prison Reformer</span>
+    </a>
+
+    <div class="header-controls">
+      <button id="readingModeBtn" class="header-btn" type="button" aria-pressed="false">Reading Mode</button>
+      <button id="printBtn" class="header-btn" type="button">Print</button>
+      <button id="menuToggle" class="header-btn menu-btn" type="button" aria-expanded="false">Sections</button>
+    </div>
+
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#media-gallery">Gallery</a>
+      <a href="#video-section">Video</a>
+      <a href="#background-biography">Biography</a>
+      <a href="#context">Context</a>
+      <a href="#obstacles">Obstacles</a>
+      <a href="#strategies-awareness">Awareness</a>
+      <a href="#impact">Impact</a>
+      <a href="#goal">Goal</a>
+      <a href="#target-audience">Audience</a>
+      <a href="#planned-strategies">Methods</a>
+      <a href="#actions-taken">Actions</a>
+      <a href="#alliances">Alliances</a>
+      <a href="#legislation">Laws</a>
+      <a href="#public-outreach">Outreach</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="chapter hero reveal" id="overview">
+      <div class="hero-content">
+        <p class="eyebrow">U.S. History I Honors</p>
+        <h1>Dorothea Dix and the Transformation of Mental Health Reform in the 19th Century</h1>
+        <p class="lead">
+          Dorothea Dix brought national attention to how people with mental illness were treated in prisons,
+          poorhouses, and state institutions. Through investigation, writing, and steady lobbying, she helped
+          shift public policy toward humane care in the 19th century.
+        </p>
+        <p class="identity">
+          <strong>Student:</strong> Jayaratna Deshamouni<br />
+          <strong>Period:</strong> 4<br />
+          <strong>Teacher:</strong> Mr. Burke<br />
+          <strong>Course:</strong> U.S. History I Honors
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#actions-taken">View Timeline</a>
+          <a class="btn btn-outline" href="#media-gallery">View Gallery</a>
+        </div>
+      </div>
+
+      <aside class="hero-tools">
+        <h2>Information Finder</h2>
+        <label for="searchNotes">Search across all notes</label>
+        <input id="searchNotes" type="text" placeholder="Example: Worcester, Pierce, Pope, nurses..." />
+        <p id="searchStatus" class="search-status">Start typing to search the notes.</p>
+        <div class="search-nav">
+          <button id="prevMatch" type="button">Previous</button>
+          <button id="nextMatch" type="button">Next</button>
+        </div>
+        <p class="tiny">Press Enter in the search box to jump directly to the first exact note match.</p>
+      </aside>
+    </section>
+
+    <section class="chapter reveal" id="media-gallery">
+      <div class="chapter-head">
+        <p class="eyebrow">Visuals</p>
+        <h2>Image Gallery</h2>
+      </div>
+      <div class="carousel" id="imageCarousel" aria-label="Dorothea Dix image gallery">
+        <div class="carousel-track" id="carouselTrack">
+          <figure class="slide active">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Harvard_Daguerreotypes_-_bMS_Am_1838_%28994.2%29_-_Dorothea_Dix.jpg" alt="Portrait of Dorothea Dix" />
+          </figure>
+          <figure class="slide">
+            <img src="https://i0.wp.com/www.northcarolinahealthnews.org/wp-content/uploads/2016/10/dixhospital.jpg?w=954&ssl=1" alt="Dorothea Dix Hospital image" />
+          </figure>
+          <figure class="slide">
+            <img src="https://www.intelycare.com/wp-content/uploads/2025/09/dorothea-dix-1.png" alt="Dorothea Dix image from IntelyCare" />
+          </figure>
+        </div>
+        <button class="carousel-btn prev" id="carouselPrev" type="button" aria-label="Previous image">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext" type="button" aria-label="Next image">&#10095;</button>
+        <div class="dots" id="carouselDots" aria-label="Carousel indicators"></div>
+      </div>
+    </section>
+
+    <section class="chapter reveal" id="video-section">
+      <div class="chapter-head">
+        <p class="eyebrow">Visuals</p>
+        <h2>Video Presentation</h2>
+      </div>
+      <div class="video-shell">
+        <a
+          class="video-preview"
+          href="https://www.youtube.com/watch?v=nSYM4IS_jiA"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Watch Dorothea Dix video on YouTube">
+          <img src="https://www.amightygirl.com/wp/wp-content/uploads/2019/04/dorothea-dix-blog-web.jpg" alt="Dorothea Dix video preview thumbnail" />
+          <span class="video-play">Watch on YouTube</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="chapter reveal" id="background-biography">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 1</p>
+        <h2>Background / Biography</h2>
+      </div>
+      <div class="chapter-grid">
+        <article class="card note searchable">
+          <p><strong>Dorothea Lynde Dix</strong> was born on <strong>April 4, 1802</strong> in Hampden, District of Maine (then Massachusetts, now Maine), and died on <strong>July 17, 1887</strong> in Trenton, New Jersey. She left an unhappy home at age 12 to study in Boston with her grandmother. By 14, she was teaching at a girls' school in Worcester and used a self-designed curriculum focused on natural sciences and ethical living.</p>
+          <p>In <strong>1821</strong>, she opened a Sunday school for girls in Boston, but by the mid-1830s chronic illness repeatedly interrupted her work and eventually led her to leave the city. Her <strong>Calvinist beliefs</strong> shaped her moral perspective on suffering and duty.</p>
+          <p>At the <strong>East Cambridge House of Correction</strong>, she witnessed mentally ill prisoners stripped, chained, and imprisoned with criminals regardless of age or sex. She later fought to expand the Worcester Insane Asylum, inspired legislators in 15 states and Canada, urged Pope Pius IX to inspect prison conditions during her <strong>1854-1856</strong> European tour, published <em>Remarks on Prisons and Prison Discipline in the United States</em> in <strong>1845</strong>, and became Superintendent of Army Nurses in <strong>1861</strong>.</p>
+        </article>
+        <aside class="card media-slot">
+          <img src="https://www.apaf.org/getmedia/ec0b94db-3dc9-40e4-b74d-ae4d66c88f30/02-Dorothea-Dix.jpg" alt="Dorothea Dix portrait placeholder" />
+        </aside>
+      </div>
+      <p class="source">Source: <a href="https://school.eb.com/levels/high/article/Dorothea-Dix/30698" target="_blank" rel="noreferrer">Britannica School - Dorothea Dix</a></p>
+    </section>
+
+    <section class="chapter reveal" id="context">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 2</p>
+        <h2>Historical Context</h2>
+      </div>
+      <article class="card note searchable">
+        <p>Mental illness has long been tied to severe social suffering and disability. Greek medical writers described disorders as diseases, but during the early Middle Ages in Europe many communities interpreted symptoms as witchcraft, demonic possession, or divine displeasure. From the seventeenth century onward, people labeled mentally ill were commonly confined with vagrants, disabled groups, and delinquent populations.</p>
+        <p>Some religious orders offered care, and Muslim Arab societies are credited with asylum construction as early as the eighth century. Yet violent or misunderstood patients were often treated under prison-like conditions. By the eighteenth and nineteenth centuries, reform movements expanded institutions across North America and Europe. Places like York Retreat promoted humane treatment, while other asylums became infamous for brutality and filth. Dorothea Dix entered this contradictory landscape and demanded that governments replace punishment with treatment.</p>
+      </article>
+      <p class="source">Source: <a href="https://school.eb.com/levels/high/article/mental-disorder/109830" target="_blank" rel="noreferrer">Britannica School - Mental Disorder</a></p>
+    </section>
+
+    <section class="chapter reveal" id="obstacles">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 3</p>
+        <h2>Obstacles Faced</h2>
+      </div>
+      <article class="card note searchable">
+        <ul>
+          <li><strong>Unstable childhood:</strong> limited records, reported neglect, and likely family alcoholism/abuse.</li>
+          <li><strong>Gender barriers:</strong> teaching was one of few professions open to women.</li>
+          <li><strong>Health crises:</strong> repeated illness, severe fatigue, cough, depression, and emotional overwhelm.</li>
+          <li><strong>Political resistance:</strong> lawmakers rejected or delayed reforms, including a failed federal asylum plan.</li>
+          <li><strong>Public criticism:</strong> criticism of her positions on slavery and limited involvement in broader feminism.</li>
+          <li><strong>Military hostility:</strong> male doctors often opposed female nurses in Union hospitals.</li>
+        </ul>
+      </article>
+      <p class="source">Sources: <a href="https://www.womenshistory.org/education-resources/biographies/dorothea-dix" target="_blank" rel="noreferrer">National Women's History Museum</a> | <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1470530/" target="_blank" rel="noreferrer">PMC</a></p>
+    </section>
+
+    <section class="chapter reveal" id="strategies-awareness">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 4</p>
+        <h2>Strategies Used to Create Awareness/Change</h2>
+      </div>
+      <article class="card note searchable">
+        <p>Dix built reform by starting with evidence. She investigated prisons and poorhouses, documented conditions in detail, published forceful memorials, testified before legislatures, and lobbied at both state and federal levels. She also used her social network to reach decision-makers while keeping firsthand observations at the center of her argument.</p>
+        <ul>
+          <li>Statewide investigations and first-hand documentation.</li>
+          <li>Memorial reports that prompted Worcester expansion financing.</li>
+          <li>Land-Grant Bill campaign for indigent insane persons (passed Congress, vetoed by Franklin Pierce).</li>
+          <li>Cross-Atlantic advocacy in the U.K., Canada, and Europe.</li>
+          <li>Founding/expansion role in 30+ hospitals; influence in NJ, IL, PA, and NC.</li>
+        </ul>
+      </article>
+      <p class="source">Sources: <a href="https://home.nuhw.org/2025/02/19/dorothea-dix/" target="_blank" rel="noreferrer">NUHW</a> | <a href="https://www.battlefields.org/learn/articles/dorothea-dix-reformer-author-teacher-nurse" target="_blank" rel="noreferrer">American Battlefield Trust</a></p>
+    </section>
+
+    <section class="chapter reveal" id="impact">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 5</p>
+        <h2>Results / Long-Term Impact</h2>
+      </div>
+      <div class="impact-row">
+        <div class="impact-card"><span class="counter" data-counter="13">0</span><p>U.S. mental institutions in 1843</p></div>
+        <div class="impact-card"><span class="counter" data-counter="123">0</span><p>U.S. mental institutions in 1880</p></div>
+        <div class="impact-card"><span class="counter" data-counter="32">0</span><p>Institutions where Dix was a key founding/expansion force</p></div>
+      </div>
+      <article class="card note searchable">
+        <p>Dix's reforms changed both institutions and public expectations. She exposed cruelty in existing systems, helped establish state psychiatric hospitals, expanded women's nursing leadership in wartime, and argued that poor and mentally ill people deserved care aimed at recovery rather than punishment.</p>
+        <p>Results varied by state, but her influence was broad: some states built new hospitals while others expanded existing ones. Her work helped move U.S. mental health care from neglect toward public responsibility.</p>
+      </article>
+      <p class="source">Source: <a href="https://www.ebsco.com/research-starters/history/dorothea-dix" target="_blank" rel="noreferrer">EBSCO Research Starter</a></p>
+    </section>
+
+    <section class="chapter reveal" id="goal">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 6</p>
+        <h2>What was their specific goal? (Fair treatment for the mentally ill)</h2>
+      </div>
+      <article class="card note searchable">
+        <p><strong>Main goal:</strong> fair treatment of mentally ill and less fortunate people through law, funding, institutional reform, and humane care standards.</p>
+        <ul>
+          <li>Advocated treatment over punishment in U.S. and European institutions.</li>
+          <li>In 1848, pushed Congress to dedicate land for mental health facilities.</li>
+          <li>In Civil War service, organized supplies and nurse training in Washington hospitals.</li>
+          <li>Promoted expanded opportunities and formal training for women nurses.</li>
+          <li>Sought redesign and restructuring of hospitals based on humane principles.</li>
+        </ul>
+      </article>
+      <p class="source">Sources: <a href="https://siarchives.si.edu/blog/dorothea-dix-mental-health-reformer-and-civil-war-nurse" target="_blank" rel="noreferrer">Smithsonian</a> | <a href="https://www.womenshistory.org/education-resources/biographies/dorothea-dix" target="_blank" rel="noreferrer">National Women's History Museum</a></p>
+    </section>
+
+    <section class="chapter reveal" id="target-audience">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 7</p>
+        <h2>Who was their target audience?</h2>
+      </div>
+      <article class="card note searchable">
+        <ul>
+          <li>State legislatures (Massachusetts, Illinois, and others).</li>
+          <li>Members of Congress and federal decision-makers.</li>
+          <li>Prison, poorhouse, and asylum administrators.</li>
+          <li>Strict political leaders, including President Franklin Pierce.</li>
+          <li>Union Army medical leadership and nurses.</li>
+          <li>Reform-minded allies: Channing, Emerson, Mann, Howe, Sumner, and others.</li>
+        </ul>
+      </article>
+      <p class="source">Source: <a href="https://www.ebsco.com/research-starters/history/dorothea-dix" target="_blank" rel="noreferrer">EBSCO Research Starter</a></p>
+    </section>
+
+    <section class="chapter reveal" id="planned-strategies">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 8</p>
+        <h2>What strategies did they plan to use (petitions, rallies, writing, lobbying, education campaigns, etc.)?</h2>
+      </div>
+      <article class="card note searchable">
+        <p>Dix used a layered strategy: research tours, memorial writing, legislative petitions, alliance building, international comparison, and public moral argument grounded in direct observation.</p>
+        <ul>
+          <li>Published educational writings such as <em>Conversations on Common Things</em>.</li>
+          <li>Networked with reformers during European travel beginning in 1836.</li>
+          <li>Used prison and asylum testimony in persuasive legislative memorials.</li>
+          <li>Produced dozens of pamphlets/reports to drive policy momentum.</li>
+          <li>Leveraged social circles to gain political access and support.</li>
+        </ul>
+      </article>
+      <p class="source">Source: <a href="https://www.battlefields.org/learn/articles/dorothea-dix-reformer-author-teacher-nurse" target="_blank" rel="noreferrer">American Battlefield Trust</a></p>
+    </section>
+
+    <section class="chapter reveal" id="actions-taken">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 9</p>
+        <h2>Actions Taken</h2>
+      </div>
+
+      <div class="timeline-filters" id="timelineFilters">
+        <button class="chip active" data-era="all" type="button">All</button>
+        <button class="chip" data-era="early" type="button">Early</button>
+        <button class="chip" data-era="reform" type="button">Reform</button>
+        <button class="chip" data-era="war" type="button">War</button>
+        <button class="chip" data-era="legacy" type="button">Legacy</button>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <article class="timeline-item left searchable" data-era="early">
+          <h3>1841: East Cambridge House of Correction</h3>
+          <p>Dix visited to teach and instead documented inhumane treatment of mentally ill prisoners.</p>
+        </article>
+        <article class="timeline-item right searchable" data-era="reform">
+          <h3>1841-1843: Statewide Surveys</h3>
+          <p>She evaluated almshouses, asylums, and jails across Massachusetts, recording sanitation, heat, and confinement failures.</p>
+        </article>
+        <article class="timeline-item left searchable" data-era="reform">
+          <h3>1843: Memorial Submitted</h3>
+          <p>She submitted a formal memorial to the Massachusetts legislature and demanded state funding for humane care.</p>
+        </article>
+        <article class="timeline-item right searchable" data-era="reform">
+          <h3>1845: Major Publication</h3>
+          <p>She published <em>Remarks on Prisons and Prison Discipline in the United States</em> to broaden reform pressure.</p>
+        </article>
+        <article class="timeline-item left searchable" data-era="reform">
+          <h3>1840s-1850s: Institution Building</h3>
+          <p>She presented reports to multiple legislatures and helped establish/expand about 32 institutions.</p>
+        </article>
+        <article class="timeline-item right searchable" data-era="reform">
+          <h3>1854-1856: International Advocacy</h3>
+          <p>She investigated asylum conditions in Europe and persuaded Pope Pius IX to inspect Roman facilities.</p>
+        </article>
+        <article class="timeline-item left searchable" data-era="war">
+          <h3>1861: Superintendent of Army Nurses</h3>
+          <p>She organized wartime nursing administration during the Civil War.</p>
+        </article>
+        <article class="timeline-item right searchable" data-era="legacy">
+          <h3>Postwar: Southern Reviews</h3>
+          <p>She assessed wartime damage to institutions and gave redesign recommendations.</p>
+        </article>
+      </div>
+      <p class="source">Source: <a href="https://www.britannica.com/science/mental-hygiene" target="_blank" rel="noreferrer">Britannica - Mental Hygiene</a></p>
+    </section>
+
+    <section class="chapter reveal" id="alliances">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 10</p>
+        <h2>Alliances Formed</h2>
+      </div>
+      <article class="card note searchable">
+        <p>Dix built influential alliances in Boston and internationally. Her network included Rev. William Ellery Channing and major reform-era leaders such as Ralph Waldo Emerson, Horace Mann, Charles Sumner, and Samuel Gridley Howe. She also connected with British reformers, notably Samuel Tuke of York Retreat, and formed practical alliances with Union women nurses during the Civil War.</p>
+      </article>
+      <p class="source">Source: <a href="https://socialwelfare.library.vcu.edu/people/dix-dorthea-lynde/" target="_blank" rel="noreferrer">VCU Social Welfare History Project</a></p>
+    </section>
+
+    <section class="chapter reveal" id="legislation">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 11</p>
+        <h2>Legislation Proposed / Supported</h2>
+      </div>
+      <article class="card note searchable">
+        <ul>
+          <li>Massachusetts asylum reform (1843-1845), including Worcester improvements.</li>
+          <li>State-level funding laws in New York, Pennsylvania, New Jersey, Illinois, North Carolina, and Louisiana.</li>
+          <li>Federal Bill for the Benefit of the Indigent Insane (passed Congress, vetoed by Pierce).</li>
+          <li>Support for separating mentally ill populations from criminal incarceration systems.</li>
+          <li>Civil War nursing regulations that improved hospital standards and female nurse policy.</li>
+        </ul>
+      </article>
+      <p class="source">Source: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1470530/" target="_blank" rel="noreferrer">PMC</a></p>
+    </section>
+
+    <section class="chapter reveal" id="public-outreach">
+      <div class="chapter-head">
+        <p class="eyebrow">Section 12</p>
+        <h2>Public outreach efforts</h2>
+      </div>
+      <div class="chapter-grid">
+        <article class="card note searchable">
+          <p>In her Memorial to the Massachusetts legislature, Dix exposed cages, cellars, and severe neglect in jails and poorhouses. She argued that government could not undo past abuse, but it could prevent future cruelty through immediate policy and funding changes.</p>
+          <p>She insisted mentally ill people should be separated from criminal populations and treated as patients with rights and dignity. Her outreach was explicit, direct, and ethically forceful, making indifference politically difficult.</p>
+        </article>
+        <aside class="card media-slot">
+          <img src="https://covers.openlibrary.org/b/id/6266741-L.jpg" alt="Memorial primary source placeholder" />
+        </aside>
+      </div>
+      <p class="source">Primary source: <a href="https://images.socialwelfare.library.vcu.edu/items/show/186" target="_blank" rel="noreferrer">Memorial to the Legislature of Massachusetts</a></p>
+    </section>
+
+    <section class="chapter reveal" id="sources">
+      <div class="chapter-head">
+        <p class="eyebrow">References</p>
+        <h2>Sources</h2>
+      </div>
+      <article class="card note">
+        <ul class="sources-list">
+          <li><a href="https://school.eb.com/levels/high/article/Dorothea-Dix/30698" target="_blank" rel="noreferrer">Britannica School: Dorothea Dix</a></li>
+          <li><a href="https://school.eb.com/levels/high/article/mental-disorder/109830" target="_blank" rel="noreferrer">Britannica School: Mental Disorder</a></li>
+          <li><a href="https://www.womenshistory.org/education-resources/biographies/dorothea-dix" target="_blank" rel="noreferrer">National Women's History Museum</a></li>
+          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1470530/" target="_blank" rel="noreferrer">PMC Article</a></li>
+          <li><a href="https://home.nuhw.org/2025/02/19/dorothea-dix/" target="_blank" rel="noreferrer">NUHW Article</a></li>
+          <li><a href="https://www.battlefields.org/learn/articles/dorothea-dix-reformer-author-teacher-nurse" target="_blank" rel="noreferrer">American Battlefield Trust</a></li>
+          <li><a href="https://www.ebsco.com/research-starters/history/dorothea-dix" target="_blank" rel="noreferrer">EBSCO</a></li>
+          <li><a href="https://siarchives.si.edu/blog/dorothea-dix-mental-health-reformer-and-civil-war-nurse" target="_blank" rel="noreferrer">Smithsonian Archives</a></li>
+          <li><a href="https://www.britannica.com/science/mental-hygiene" target="_blank" rel="noreferrer">Britannica: Mental Hygiene</a></li>
+          <li><a href="https://socialwelfare.library.vcu.edu/people/dix-dorthea-lynde/" target="_blank" rel="noreferrer">VCU Social Welfare</a></li>
+          <li><a href="https://images.socialwelfare.library.vcu.edu/items/show/186" target="_blank" rel="noreferrer">Memorial Primary Source</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">Top</button>
+
+  <footer class="site-footer">
+    <p>Dorothea Dix Project | Jayaratna Deshamouni | Period 4 | Mr. Burke | U.S. History I Honors</p>
+    <a href="#top">Return to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
